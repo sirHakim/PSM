@@ -1,0 +1,55 @@
+.topnav {
+  overflow: hidden;
+  background-color: #0000FF;
+  margin-bottom: 20px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #696969;
+  color: white;
+}
+.mg{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+label{
+	 font-size: 20px;
+}
+input{
+	font-size: 20px;
+}
+table{
+	font-size: 20px;
+}
+button{
+	font-size: 20px;
+}
+
+h2{
+  width: 100%;
+  text-align: left;
+  border-bottom: 5px solid #0000FF;
+  line-height: 0.0em;
+  margin: 10px 0 20px;
+  margin-top: 25px;
+}
+h2 span{
+  padding-top: 10px;
+  background: #0000FF;
+  padding: 0 10px;
+  color: #ffffff;
+}
