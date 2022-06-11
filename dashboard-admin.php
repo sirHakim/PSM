@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <a href="logout.php" style="float: right;">Log Out</a>
 </div>
 <div style="display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;background-color: lightyellow;background-color: #C0C0C0;padding-bottom: 10px;">
-    <div style="background-color: #C0C0C0;border-left: 5px solid #0000FF;border-right: 5px solid #0000FF;border-bottom: 5px solid #0000FF;border-top: 5px solid #0000FF;text-align: center;border-radius: 10px;width: 1500px;"><h2><span>Add New User</span></h2>
+    <div style="background-color: #C0C0C0;border-left: 5px solid #0000FF;border-right: 5px solid #0000FF;border-bottom: 5px solid #0000FF;border-top: 5px solid #0000FF;text-align: center;border-radius: 10px;"><h2><span>Add New User</span></h2>
         <form action="dashboard-admin.php" method="post">
         <table style="text-align: left;padding: 10px;">
             <tr>
@@ -87,7 +87,7 @@ if(empty(trim($_POST["name"])) or empty(trim($_POST["id"])) or empty(trim($_POST
   ?>
     </div>
 </div>
-<div style="background-color: #C0C0C0;border-left: 5px solid #0000FF;border-right: 5px solid #0000FF;border-bottom: 5px solid #0000FF;border-top: 5px solid #0000FF;text-align: left;height: relative;width: 1500px; border-radius: 10px;overflow: auto;"><h2><span>Search User</span></h2>
+<div style="background-color: #C0C0C0;border-left: 5px solid #0000FF;border-right: 5px solid #0000FF;border-bottom: 5px solid #0000FF;border-top: 5px solid #0000FF;text-align: left;height: relative;border-radius: 10px;overflow: auto;"><h2><span>Search User</span></h2>
         <form action="dashboard-admin.php" method="post" style="padding: 10px;">
                     <label>Search: </label>
                     <input type="text" name="searchVal" style="width: 300px;" placeholder="Enter username or id">
