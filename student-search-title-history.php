@@ -13,8 +13,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
  require_once "config.php";
  $mysqli = $link;
  //check student request title
- $sql_check_title = ("SELECT p.id_permintaan,p.id_tajuk_penyelia,p.id_pelajar,t.nama_tajuk,s.nama_penyelia,p.program FROM permintaan_tajuk p, tajuk_penyelia t,penyelia s WHERE p.id_tajuk_penyelia=t.id_tajuk_penyelia && t.id_penyelia=s.id_penyelia && p.id_pelajar='".$_SESSION["username"]."'");
- $title_check = mysqli_query($link, $sql_check_title);
+ //$sql_check_title = ("SELECT p.id_permintaan,p.id_tajuk_penyelia,p.id_pelajar,t.nama_tajuk,s.nama_penyelia,p.program FROM permintaan_tajuk p, tajuk_penyelia t,penyelia s WHERE p.id_tajuk_penyelia=t.id_tajuk_penyelia && t.id_penyelia=s.id_penyelia && p.id_pelajar='".$_SESSION["username"]."'");
+ //$title_check = mysqli_query($link, $sql_check_title);
  ?>
  
 <!DOCTYPE html>
