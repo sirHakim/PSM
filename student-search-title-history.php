@@ -6,7 +6,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login-user.php");
     exit;
 }
-date_default_timezone_set('Asia/Kuala_Lumpur');
 // echo "Today date: ".date('d-m-Y');
 ?>
 <?php
@@ -66,7 +65,7 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
                     </div>
                     <div style="display:flex;flex-direction: column; background-color: #C0C0C0;padding: 10px;">
                         <?php
-                         $mysqli = $link;
+                         
                          if(isset($_POST["title_search"])){
                           $sql = "SELECT p.nama_pelajar,st.nama_tajuk,sv.nama_penyelia,p.kod_program FROM sejarah_tajuk st,program pr,pelajar p,penyelia sv WHERE p.id_pelajar=st.id_pelajar && p.kod_program=pr.kod_program && p.id_penyelia=sv.id_penyelia && st.nama_tajuk LIKE '%".$_POST["searchVal"]."%';";
                           $sql_result = mysqli_query($link,$sql);
@@ -109,8 +108,3 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
 </body>
 
 </html>
-<script>  
- $(document).ready( function () {
-    $('#tb1').DataTable();
-} );
- </script>
