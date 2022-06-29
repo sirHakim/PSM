@@ -127,7 +127,7 @@ WHERE
                           </tr>';
                         }
                       }else{
-                        echo '<tr style="background-color:#87CEFA;"><td colspan="3" style="text-align:center;">No supervise request at this moment.</td></tr>';
+                        echo '<tr style="background-color:#87CEFA;"><td colspan="4" style="text-align:center;">No supervise request at this moment.</td></tr>';
                       }
                     ?>
                     </table>
