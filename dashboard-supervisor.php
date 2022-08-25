@@ -99,7 +99,7 @@ WHERE
                             </tr>';}
                         }else{
                           if(mysqli_num_rows($rq_rs)==0){
-                              echo '<tr style="background-color:#87CEFA;"><td colspan="3" style="text-align:center;">No title request at this moment.</td></tr>';}
+                              echo '<tr style="background-color:#87CEFA;"><td colspan="4" style="text-align:center;">No title request at this moment.</td></tr>';}
                              }
                       ?>
                        </table>
